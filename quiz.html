@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>Quiz Time</h1>
+    <form id="quizForm">
+        <div class="question">
+            <p>1. What is the capital of France?</p>
+            <ul class="options">
+                <li><input type="radio" name="q1" value="a"> A) Rome</li>
+                <li><input type="radio" name="q1" value="b"> B) Paris</li>
+                <li><input type="radio" name="q1" value="c"> C) Madrid</li>
+                <li><input type="radio" name="q1" value="d"> D) Berlin</li>
+            </ul>
+        </div>
+        <div class="question">
+            <p>2. Which element has the chemical symbol 'O'?</p>
+            <ul class="options">
+                <li><input type="radio" name="q2" value="a"> A) Oxygen</li>
+                <li><input type="radio" name="q2" value="b"> B) carbon</li>
+                <li><input type="radio" name="q2" value="c"> C) Nitrogen</li>
+                <li><input type="radio" name="q2" value="d"> D) Osmium</li>
+            </ul>
+        </div>
+        <div class="question">
+            <p>3. Which is the largest ocean in the world?</p>
+            <ul class="options">
+                <li><input type="radio" name="q3" value="a"> A) Atlantic Ocean</li>
+                <li><input type="radio" name="q3" value="b"> B) Pacific Ocean</li>
+                <li><input type="radio" name="q3" value="c"> C) Indian Ocean</li>
+                <li><input type="radio" name="q3" value="d"> D) Arctic Ocean</li>
+            </ul>
+        </div>
+        <div class="question">
+            <p>4. What is the SI unit of force?</p>
+            <ul class="options">
+                <li><input type="radio" name="q4" value="a"> A) Joule</li>
+                <li><input type="radio" name="q4" value="b"> B) Pascal</li>
+                <li><input type="radio" name="q4" value="c"> C) Watt</li>
+                <li><input type="radio" name="q4" value="d"> D) Newton</li>
+            </ul>
+        </div>
+        <div class="question">
+            <p>5. Which subatomic particle has a negative charge?</p>
+            <ul class="options">
+                <li><input type="radio" name="q5" value="a"> A) Proton</li>
+                <li><input type="radio" name="q5" value="b"> B) Electron</li>
+                <li><input type="radio" name="q5" value="c"> C) Neutron</li>
+                <li><input type="radio" name="q5" value="d"> D) Positron</li>
+            </ul>
+        </div>
+        <button type="button" onclick="calculateScore()">Submit</button>
+    </form>
+    <div id="result" style="display:none;">
+        <h2>Your Score: <span id="score"></span></h2>
+    </div>
+</div>
+
+<script src="quiz.js">
+    
+</script>
+
+</body>
+</html>
